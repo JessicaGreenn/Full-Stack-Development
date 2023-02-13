@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <color name="ic_launcher_background">#FFFFFF</color>-->
+    <style name="Theme.BusinessSearchApp.Launcher">
+        <item name="android:activatedBackgroundIndicator">@drawable/splash_screen</item>
+    </style>
+
+</resources>

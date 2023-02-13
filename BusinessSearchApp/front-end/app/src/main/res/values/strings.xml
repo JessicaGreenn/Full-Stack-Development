@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">BusinessSearchApp</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="search_form_label">Yelp</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">0</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="submit_button_text">SUBMIT</string>
+    <string name="clear_button_text">CLEAR</string>
+    <string name="count_button">Count</string>
+
+
+    <string name="searchForm">Business Search</string>
+    <string name="keyHolder">KeyWord <font color='#FF0000'>*</font></string>
+    <string name="disHolder">Distance</string>
+    <string name="locHolder">Location <font color='#FF0000'>*</font></string>
+    <string name="autoHint">Auto-detect my location</string>
+    <string name="cateLabel">Category <font color='#FF0000'>*</font></string>
+    <string-array name="cateItems">
+        <item>Default</item>
+        <item>Arts &amp; Entertainment</item>
+        <item>Health &amp; Medical</item>
+        <item>Hotels &amp; Travel</item>
+        <item>Food</item>
+        <item>Professional Services</item>
+    </string-array>
+
+    <string name="resultsTable">Results</string>
+    <string name="title_activity_details">DetailsActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_test">TestActivity</string>
+
+    <string name="addLabel">Address</string>
+    <string name="priLabel">Price Range</string>
+    <string name="phoLabel">Phone Number</string>
+    <string name="staLabel">Status</string>
+    <string name="catLabel">Category</string>
+    <string name="yelpLabel">Visit Yelp For More</string>
+    <string name="reserveBtn">RESERVE NOW</string>
+
+    <string name="none">Not Shown</string>
+    <string name="sharefb">share on facebook</string>
+    <string name="sharetw">share on twitter</string>
+    <string name="title_activity_bookings">BookingsActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="next">Next</string>
+    <string name="noResults">No Results Found!</string>
+    <string name="noBookings">No Bookings found!</string>
+
+    <string name="timeToast">Time should be between 10AM AND 5PM</string>
+    <string name="emailToast">InValid Email Address.</string>
+    <string name="resBooked">Reservation Booked</string>
+    <string name="resCanceled">Removing Existing Reservation</string>
+
+
+</resources>

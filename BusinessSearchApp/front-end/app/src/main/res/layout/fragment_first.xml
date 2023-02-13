@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screenBackground"
+    tools:context=".FirstFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.BusinessSearchApp.AppBarOverlay"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/toolbar">
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="27dp"
+
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Yelp"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+            <ImageButton
+                android:id="@+id/toolbar_button"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/reservation" />
+
+        </RelativeLayout>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <TextView
+        android:id="@+id/formTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/searchForm"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <AutoCompleteTextView
+        android:id="@+id/keyInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:ems="10"
+        android:hint="@string/keyHolder"
+        app:layout_constraintStart_toStartOf="@+id/formTitle"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/disInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="156dp"
+        android:ems="10"
+        android:hint="@string/disHolder"
+        app:layout_constraintStart_toStartOf="@+id/keyInput"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cateTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="@string/cateLabel"
+        android:textColor="@color/cateLabel"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@id/cateInput"
+        app:layout_constraintStart_toStartOf="@+id/disInput"
+        app:layout_constraintTop_toBottomOf="@+id/disInput"
+        app:layout_constraintVertical_bias="0.285" />
+
+    <Spinner
+        android:id="@+id/cateInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toTopOf="@id/locInput"
+        app:layout_constraintStart_toStartOf="@+id/cateTitle"
+        app:layout_constraintTop_toBottomOf="@id/cateTitle"
+        app:layout_constraintVertical_bias="0.345" />
+
+    <CheckBox
+        android:id="@+id/autoLocating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="328dp"
+        android:backgroundTint="#D500F9"
+        android:buttonTint="#D500F9"
+        android:text="@string/autoHint"
+        app:layout_constraintStart_toStartOf="@+id/locInput"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/locInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="272dp"
+        android:ems="10"
+        android:hint="@string/locHolder"
+        app:layout_constraintStart_toStartOf="@+id/disInput"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginBottom="264dp"
+        android:background="@drawable/round_shape_btn"
+        android:fontFamily="sans-serif"
+        android:text="@string/submit_button_text"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/autoLocating"
+        app:layout_constraintVertical_bias="0.325" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/clear_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="84dp"
+        android:background="@drawable/round_shape_btn"
+        android:fontFamily="sans-serif"
+        android:text="@string/clear_button_text"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/submit_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/submit_button"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <!--    <GridView-->
+<!--        android:id="@+id/resultsTab"-->
+<!--        android:layout_width="fill_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:numColumns="1"-->
+<!--        tools:ignore="MissingConstraints" />-->
+
+    <TextView
+        android:id="@+id/tableTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="464dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/resultsTable"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="@+id/autoLocating"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/noResults"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/tableTitle"
+        android:text="@string/noResults"
+        android:textColor="@color/toolbar"
+        android:textSize="14dp"
+        app:layout_constraintTop_toBottomOf="@+id/tableTitle"
+        android:layout_marginTop="8dp"/>
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/relativeLayout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/tableTitle"-->
+<!--        app:layout_constraintVertical_bias="0.2"-->
+<!--        tools:context=".MainActivity">-->
+
+
+<!--    </RelativeLayout>-->
+
+    <ScrollView
+        android:layout_width="393dp"
+        android:layout_height="185dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableTitle"
+        app:layout_constraintVertical_bias="0.272">
+        <!--            <GridView-->
+        <!--                android:id="@+id/resultsTab"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:numColumns="1"-->
+        <!--                ></GridView>-->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/resultsTab"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:layout_margin="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tableTitle">
+
+        </androidx.recyclerview.widget.RecyclerView>
+        <!--                recyclerView.setNestedScrollingEnabled(false)-->
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
