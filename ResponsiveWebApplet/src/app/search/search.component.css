@@ -1,0 +1,212 @@
+body{
+  background-image: url('../../city.jpg');
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  
+  background-position: bottom; 
+  background-color: white;
+}
+
+a.nav-link:hover{
+  color: black;
+}
+
+ul.nav{
+  margin-top: 1%;
+  margin-right: 3%;
+}
+#search{
+    color: black;
+    border: black solid 2px;
+    border-radius: 12px;
+    padding: 6px;
+   
+}
+#bookings{
+  color: black;
+  padding: 6px;
+}
+
+#searchForm{
+  background-color: white;
+  border-radius: 12px;
+  border: #eee solid 1px;
+  /* width: 50%; */
+  height: auto;
+  margin: auto;
+  margin-top: 3%;
+  position: relative;
+}
+#formHead{
+  position: relative;
+ 
+  font-weight: bold;
+  font-size: 23.5px;
+  text-align: center;
+  color: black;
+  margin-top: 5%;
+
+}
+
+#key::after{
+  content: '*';
+  color: red;
+}
+#cate::after{
+  content: '*';
+  color: red;
+}
+#loc::after{
+  content: '*';
+  color: red;
+}
+
+.row{
+  position: relative;
+
+  margin: 2%;
+}
+
+#auto{
+  position: relative;
+ 
+  margin-left: 5%;
+}
+#submitBtn{
+  margin-right: 3%;
+  text-align: end;
+}
+
+#btns{
+  position: relative;
+  
+  margin-bottom: 8%;
+}
+
+img.preImg{
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  max-width: 100%;
+  
+}
+
+#results{
+  background-color: white;
+  border-radius: 12px;
+  /* border: #eee solid 1px; */
+  /* width: 80%; */
+  margin: auto;
+}
+
+#fb{
+  width: 4%;
+  height: 100%;
+}
+
+#tw{
+  width: 4%;
+  height: 100%;
+}
+
+#nullMessage{
+  /* font-family: sans-serif; */
+  color: red;
+  /* font-size: 18px; */
+  font-weight: bold;
+  /* width: 24%;
+  height: 3%; */
+  background-color: white;
+  /* margin: auto; */
+  text-align: center;
+  border-radius: 12px;
+  
+}
+#arrow{
+  margin-left: 4%;
+  margin-top: 3%;
+}
+a.detailsLink{
+  text-decoration: none;
+  color: black;
+}
+
+#detailsCard{
+  background-color: white;
+  border-radius: 12px;
+  border: #eee solid 1px;
+  /* width: 65%; */
+  height:auto;
+  margin: auto;
+  position: relative;
+}
+
+#busiName{
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2%;
+
+}
+.carousel-inner{
+  /* width:40%; */
+  margin: auto;
+  aspect-ratio: 1/1;
+}
+.carousel-item{
+  aspect-ratio: 1/1;
+  width:100%;
+  object-position: center;
+}
+#carouselExampleInterval{
+  width: 100%;
+  /* padding-bottom: 3%; */
+  margin: auto;
+}
+
+#photo1{
+  object-fit: cover;
+  object-position: center;
+  max-width: 80%;
+  aspect-ratio: 1/1;
+  margin: auto;
+
+}
+#photo2{
+  object-fit: cover;
+  object-position: bottom;
+  max-width: 80%;
+  aspect-ratio: 1/1;
+  margin: auto;
+
+}
+#photo3{
+  object-fit: cover;
+  object-position: center;
+  max-width: 80%;
+  margin: auto;
+
+}
+
+#reviews{
+  background-color: white;
+}
+#reviewName{
+  font-weight: bold;
+  
+}
+.my-google-map{
+  margin: auto;
+
+  width: 800px;
+  height: 600px;
+
+
+}
+
+#reservationHead{
+  text-align: center;
+}
+
+#timePick{
+  margin-left: 0;
+  padding-left: 0;
+}
