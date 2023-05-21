@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script  type = "text/javascript" src = "./static/JS/BusinessSearch.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BusinessSearch</title>
+    <link rel="stylesheet" href="./static/css/BusinessSearch.css">
+    <style>
+        form.container{
+            width: 600px;
+            height: 510px;
+            margin: 5px auto;
+            background-color: white;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <!-- <form class = "container" method="get" action = "/yelpParam" id="businessSearch"> -->
+    <form class = "container" action = "" method = "get">
+        <div class = "heading">
+            <span id = "formHead">Business Search</span>
+            <span id = "formSlogan">Fill out the form to get businesses near you!</span>
+        </div>
+        
+        <div class = "form" method = "get" onsubmit = "return false" >
+
+            <label class = "keyword">Keyword</label><br>
+            <input id = "keyInput" type = "text" name="keyword" required>
+            
+            <label class = "distance">Distance(miles)</label><br>
+            <input id = "disInput" type = "text" name = "distance" value="10">
+            
+            <label class = "category">Category</label><br>
+            <select class = "category" name="category">
+                <option value="all">Default</option>
+                <option value="Arts+Entertainment">Arts & Entertainment</option>
+                <option value="Health+Medical">Health & Medical</option>
+                <option value="Hotels+Travel">Hotels & Travel</option>
+                <option value="Food">Food</option>
+                <option value="Professional Services">Professional Services</option>
+            </select>
+
+            <label class = "location">Location</label><br>
+            <input id = "locInput" type = "text" name="location" required>
+
+            <hr>
+            <label class = "autoDetect">Want us to auto-detect your location? Check here</label>
+            <input id = "check" type="checkbox" name = "check" value = "check" onclick="disableLocation()">
+            
+            <button class = "submit" onclick="sm()" >SUBMIT</button>
+            
+            <button class = "clear" onclick="clearInput()">CLEAR</button>
+            <!-- <button class = "latlng" onclick="sm()">LATLNG</button> -->
+        </div>
+
+    </form>
+    <br>
+    <div id = "nullMessage">No record has been found</div>
+    <br><br><br><br><br>
+    <table id = "searchTable">
+        <tr id = "searchHead" >
+
+        </tr>
+        <tbody id="searchData">
+
+        </tbody>
+        
+    </table>
+
+    <br><br><br><br><br><br>
+
+    <div class="card" id = "detailsCard">
+        
+        <div class="detailsHeading" id = "dH"></div>
+        <hr id="detailsHr">
+        <div class="left">
+            <div id = "Status">
+                <label class = "head" id = "statusInfo"></label><br>
+                <label class = "info" id = "open"></label>
+            </div>
+            <div id="Address">
+                <label class = "head" id = "addInfo"></label><br>
+                <label class = "info" id = "addr"></label>
+            </div>
+            <div id="Transactions">
+                <label class = "head" id="transInfo"></label><br>
+                <label class = "info" id="trans"></label>
+            </div>
+            <div id="More">
+                <label class = "head" id="moreInfo"></label><br>
+                <label class = "info"><a target="_blank" rel="noopener noreferrer" id="yelpLink"></a></label>
+            </div>
+
+        </div>
+
+        <div class="right">
+            <div id="Category">
+                <label class = "head" id = "cateInfo"></label><br>
+                <label class = "info" id = "cate"></label>
+            </div>
+            <div id = "Phone">
+                <label class = "head" id = "phInfo"></label><br>
+                <label class = "info" id="phNum"></label>
+            </div>
+            
+            <div id="Price">
+                <label class = "head" id="priceInfo"></label><br>
+                <label class = "info" id="price"></label>
+            </div>
+            
+            
+        </div>
+              
+
+        <div class = "Photos" id = "PHs">
+                <div id = "Photo1">
+                    <!-- <img src="static/img/banner.jpeg" alt = "Photo1"> -->
+                    <p id="p1">Photo1</p>
+                </div>
+                <div id = "Photo2">
+                    <!-- <img src="static/img/banner.jpeg" alt = "Photo2"> -->
+                    <p id="p2">Photo2</p>
+                </div>
+                <div id = "Photo3">
+                    <!-- <img src="static/img/banner.jpeg" alt = "Photo3"> -->
+                    <p id="p3">Photo3</p>
+                </div>
+              
+        </div>
+
+
+    </div>
+    
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+
+</body>
+</html>
